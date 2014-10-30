@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photo Hoster</string>
+    <string name="action_settings">Settings</string>
+    <string name="Exit_button">Exit</string>
+    <string name="SignIn_button">Sign In</string>
+    <string name="Registry_link">Registry</string>
+    <string name="Email_hint">Email...</string>
+    <string name="Password_hint">Password...</string>
+
+</resources>

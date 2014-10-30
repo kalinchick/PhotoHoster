@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@color/Yellow"
+    android:id="@+id/Scene"
+    android:nestedScrollingEnabled="true">
+
+    <TextView
+        android:text="@string/Registry_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Indention"
+        android:id="@+id/registry_link"
+        android:textColor="@color/Blue"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/Text_size"
+        android:autoLink="web" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Indention"
+        android:autoText="false"
+        android:background="@color/Grey"
+        android:autoLink="email"
+        android:clickable="false"
+        android:editable="true"
+        android:hint="@string/Email_hint" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginTop="@dimen/Indention"
+        android:background="@color/Grey"
+        android:hint="@string/Password_hint" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_heigth"
+        android:text="@string/SignIn_button"
+        android:id="@+id/SignIn"
+        android:layout_below="@+id/registry_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/Indention"
+        android:background="@color/Grey"
+        android:clickable="true"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_heigth"
+        android:text="@string/Exit_button"
+        android:id="@+id/exit"
+        android:layout_marginTop="@dimen/Indention"
+        android:textStyle="normal"
+        android:clickable="true"
+        android:background="@color/Grey"
+        android:layout_below="@+id/SignIn"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twitter"
+        android:layout_below="@+id/exit"
+        android:layout_marginTop="@dimen/Indention"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        android:src="@drawable/twitter_icon" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook"
+        android:layout_marginTop="@dimen/Indention"
+        android:layout_below="@+id/exit"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/facebook_icon" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vk"
+        android:layout_below="@+id/exit"
+        android:layout_marginTop="@dimen/Indention"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:src="@drawable/vk_icon" />
+
+</RelativeLayout>
